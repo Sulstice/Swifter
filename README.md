@@ -4,11 +4,11 @@
 ![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)
 
 
-**Background:** A unique look into scraping data for jobs, the motivation behind this project is to gain 
-an outlook about talent pool within a city. In combination with not only the talent pool here but what is up and coming in 
-the pipelines of universities. 
+**Background:** A unique look into scraping data for jobs. The motivation behind this project is to gain 
+an outlook about talent pool within a city, in combination with not only the existing talent pool but what is up and coming in 
+the pipelines of the local universities. 
 
-**Goal:** Come up with metrics on what a citie's talent pool is looking for and determine what is needed down the pipeline. 
+**Goal:** Come up with metrics on what a city's talent pool is looking for and determine what is needed down the pipeline. 
 
 
 Questions arise:
@@ -18,6 +18,6 @@ Using the method of scraping (name idea came from the company swiffer and myself
 ![PMI IMAGE](./imgs/swifter.jpg)
 
 
-Acknoledgements:
+Acknowledgements:
 
 

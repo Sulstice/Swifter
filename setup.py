@@ -41,7 +41,6 @@ setup(
     description="Scrape Scrape Scrape",
     long_description=README,
     author="Suliman Sharif",
-    author_email="sharifsuliman1@gmail.com",
     url="www.github",
     install_requires=REQUIREMENTS,
     zip_safe=False,

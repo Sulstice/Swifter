@@ -14,9 +14,9 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 
-from .start_scrape import start_browser, start_search, write_to_file, get_proxies
+from start_scrape import start_browser, start_search, write_to_file, get_proxies
 
-job = 'Lab Technician'
+job = 'Software Developer'
 location = 'Austin, TX'
 
 if __name__ == '__main__':

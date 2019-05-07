@@ -92,17 +92,17 @@ def start_browser(url):
     options.add_argument('--disable-plugins-discovery')
 
     # Tackle this in a later commit, but need to jump through a loop of proxies to route through.
-    prox = Proxy()
-    prox.proxy_type = ProxyType.MANUAL
-    prox.http_proxy = "ip_addr:port"
-    prox.socks_proxy = "ip_addr:port"
-    prox.ssl_proxy = "ip_addr:port"
-    capabilities = webdriver.DesiredCapabilities.CHROME
-    prox.add_to_capabilities(capabilities)
+    # prox = Proxy()
+    # prox.proxy_type = ProxyType.MANUAL
+    # prox.http_proxy = "ip_addr:port"
+    # prox.socks_proxy = "ip_addr:port"
+    # prox.ssl_proxy = "ip_addr:port"
+    # capabilities = webdriver.DesiredCapabilities.CHROME
+    # prox.add_to_capabilities(capabilities)
 
     # TODO: add this as an argument parser for other folks and their chrome driver executable.
-    driver = webdriver.Chrome(executable_path = "/Users/sulimansharif/Downloads/chromedriver",
-                              desired_capabilities=capabilities)
+    driver = webdriver.Chrome(executable_path = "/Users/sulimansharif/Downloads/chromedriver")
+                              # desired_capabilities=capabilities)
     driver.wait = WebDriverWait(driver, 10)
     login(driver, "swifter_scraper@outlook.com", "swifter1")
 

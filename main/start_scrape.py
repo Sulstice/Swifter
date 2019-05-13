@@ -101,7 +101,7 @@ def start_browser(url):
     # prox.add_to_capabilities(capabilities)
 
     # TODO: add this as an argument parser for other folks and their chrome driver executable.
-    driver = webdriver.Chrome(executable_path = "/Users/sulimansharif/Downloads/chromedriver")
+    driver = webdriver.Chrome(executable_path = "/Users/sulimansharif/Downloads/chromedriver_74")
                               # desired_capabilities=capabilities)
     driver.wait = WebDriverWait(driver, 10)
     login(driver, "swifter_scraper@outlook.com", "swifter1")
@@ -131,7 +131,7 @@ def login(driver, username, password):
         user_field = driver.wait.until(EC.presence_of_element_located(
             (By.ID, "userEmail")))
         pw_field = driver.find_element_by_id("userPassword")
-        login_button = driver.find_element_by_class_name("gd-btn-1")
+        login_button = driver.find_element_by_class_name("gd-ui-button")
         user_field.send_keys(username)
         user_field.send_keys(Keys.TAB)
         time.sleep(1)

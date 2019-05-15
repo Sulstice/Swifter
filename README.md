@@ -14,16 +14,6 @@ Monster, Indeed, and others have become a little antiquated. It's main competito
 Using the method of scraping (name idea came from the company swiffer and myself scraping dirt off a balcony)    
 ![PMI IMAGE](./imgs/swifter.jpg)
 
-**DISCLAIMER**
-
-Use Swifter at your own discretion, what you do with the data is up to you. This was primarily used to determine for users
-searching for job postings fast and retrieving values. 
-
-For now the code is updated with a version using the swifter-email into glassdoor. 
-As of right now there is no blocker in using that emails since it is primarily for swifter purposes. As the user base will 
-grow, if so, then swifter will be taken down in the adoption of user-based emails. 
-
-
 ### Prerequisites - Browsers
 
 As of right now this script only supports the browser Google Chrome 
@@ -101,6 +91,17 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Disclaimer
+
+While scraping can sometimes be used as a legitimate way to access all kinds of data on the internet, it’s also important to consider the legal implications. 
+There are many cases where scraping data may be considered illegal, or open you to the possibility of being sued. 
+Similar to using a firearm, some uses of web scraping techniques can be used for utility or sport, while others can land you in jail. 
+I am not a lawyer, but you should be smart about how you use it.
+
+For now the code is updated with a version using the swifter-email into glassdoor. 
+As of right now there is no blocker in using that emails since it is primarily for swifter purposes. As the user base will 
+grow, if so, then swifter will be taken down in the adoption of user-based emails. 
 
 ## Acknowledgments
 

@@ -64,7 +64,7 @@ After successful installion of Swifter you can run the code using these options:
 ```
 Example
 
-python -m main/swifter.py -j Software Developer -c Austin -s TX
+python -m main/swifter.py -j "Software Developer" -c "Austin" -s "TX"
 
 ```
 

@@ -22,7 +22,6 @@ if __name__ == '__main__':
     parser.add_option('-j', '--job',
                       action="store", dest="job",
                       help="enumerate all representations of file pass in options: True | False",
-                      nargs='+'
                       )
 
     parser.add_option('-c', '--city',
@@ -73,7 +72,7 @@ if __name__ == '__main__':
 
     # Start search and return job_list
     # Params: browser, job, location
-    job_list = start_search(browser, ' '.join(options.job), str(options.city + ", " + str(options.state)))
+    job_list = start_search(browser, options.job, str((options.city) + ", " + str(options.state)))
 
     # Write to csv file
     # Params: job_list, output_filename

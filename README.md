@@ -3,9 +3,9 @@
 ![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)
 
 
-**Background:** A unique look into scraping data for jobs, the motivation behind this project is to gain 
-an outlook about talent pool within a city. In combination with not only the talent pool here but what is up and coming in 
-the pipelines of universities. Glassdoor was chosen because of it's rapid growth as a household name in job searching. 
+**Background:** A unique look into scraping data for jobs. The motivation behind this project is to gain 
+an outlook about talent pool within a city, in combination with not only the existing talent pool here but what is up and coming in 
+the pipelines of local universities. Glassdoor was chosen because of it's rapid growth as a household name in job searching. 
 Monster, Indeed, and others have become a little antiquated. It's main competitor is LinkedIn in terms of job searching.
 
 

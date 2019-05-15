@@ -5,24 +5,26 @@
 # ------------------------------------------------
 
 
-# imports
-# -------
-import requests, os
-from requests.exceptions import RequestException
-from contextlib import closing
-from bs4 import BeautifulSoup
-from selenium import webdriver
-
-
-from start_scrape import start_browser, start_search, write_to_file, get_proxies
+from start_scrape import start_browser, start_search, write_to_file
+from helper import start_browser
 
 job = 'Software Developer'
 location = 'Austin, TX'
 
 if __name__ == '__main__':
+
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Define what data you would like to scrape')
+    parser.add_argument('integers', metavar='N', type=int, nargs='+',
+                        help='an integer for the accumulator')
+    parser.add_argument('--sum', dest='accumulate', action='store_const',
+                        const=sum, default=max,
+                        help='sum the integers (default: find the max)')
+
+    args = parser.parse_args()
     output_filename = 'jobs.csv'
     url = 'https://www.glassdoor.com/index.htm'
-    proxies = get_proxies()
 
     # Start driver and return driver object named 'browser'
     # Params: URL

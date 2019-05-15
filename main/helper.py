@@ -8,7 +8,11 @@
 # -------
 import requests
 from selenium import webdriver
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 class ElementNotFound(Exception):
 
@@ -45,6 +49,7 @@ def get_proxies():
             proxies.add(proxy)
     return proxies
 
+# @get_proxies Handle the get proxies for log in info and requests down stream.
 def login_glassdoor(driver, username, password):
 
     """
@@ -77,7 +82,7 @@ def login_glassdoor(driver, username, password):
     except TimeoutException:
         print("TimeoutException! Username/password field or login button not found on glassdoor.com")
 
-def start_browser(url):
+def start_browser(url, chromedriver_path):
 
     """
 
@@ -85,11 +90,13 @@ def start_browser(url):
 
     Arguments:
          url (String): the url for the host website to scrape data from.
+         chromedriver_path (String): chrome driver executable path.
 
     Returns:
         driver (object): the chrome driver object we are initiating.
 
     """
+
     options = webdriver.ChromeOptions()
     options.add_argument('--incognito')
     options.add_argument('--disable-extensions')
@@ -104,8 +111,7 @@ def start_browser(url):
     # capabilities = webdriver.DesiredCapabilities.CHROME
     # prox.add_to_capabilities(capabilities)
 
-    # TODO: add this as an argument parser for other folks and their chrome driver executable.
-    driver = webdriver.Chrome(executable_path = "/Users/sulimansharif/Downloads/chromedriver_74")
+    driver = webdriver.Chrome(executable_path=chromedriver_path)
     # desired_capabilities=capabilities)
     driver.wait = WebDriverWait(driver, 10)
     login_glassdoor(driver, "swifter_scraper@outlook.com", "swifter1")

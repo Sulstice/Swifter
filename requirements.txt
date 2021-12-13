@@ -1,7 +1,7 @@
 beautifulsoup4==4.7.1
 bs4==0.0.1
 chardet==3.0.4
-lxml==4.3.3
+lxml==4.6.5
 requests==2.21.0
 selenium==3.141.0
 soupsieve==1.9.1
